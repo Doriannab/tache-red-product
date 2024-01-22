@@ -1,21 +1,16 @@
-// UserMenu.js
+// UserProfile.js
 import React from 'react';
-import { IoIosNotifications } from 'react-icons/io';
-import { MdOutlineLogout } from 'react-icons/md';
 
 function UserMenu() {
   return (
-    <div className="relative flex items-center">
-      <div className="relative" data-te-dropdown-ref data-te-dropdown-alignment="end">
-        {/* ... le reste du code ... */}
-        <IoIosNotifications className="w-8 h-8 text-black" />
-        {/* ... le reste du code ... */}
-      </div>
-
-      <div className="relative flex items-center gap-3">
-        {/* ... le reste du code ... */}
-        <MdOutlineLogout className="w-8 h-8 text-black" />
-        {/* ... le reste du code ... */}
+    <div className="flex flex-col mb-24 max-md:hidden" >
+      <div className="text-gray-100 border-t-2 border-white" id="bord" ></div>
+      <div className='flex gap-2 p-4 '>
+        <img src="https://tecdn.b-cdn.net/img/new/avatars/2.jpg" alt="" className="w-10 h-10 rounded-full dark:bg-gray-500" />
+        <div className='flex flex-col'>
+          <h2 className="text-lg font-semibold">Anna Dior</h2>
+          <p className="text-xs hover:underline dark:text-gray-400">en ligne</p>
+        </div>
       </div>
     </div>
   );

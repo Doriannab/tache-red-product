@@ -9,6 +9,7 @@ import {
  import Reconnexion from '../components/Reconnexion';
  import Template from './Template';
 import Dashboard from '../components/Dashboard';
+import Hotel from '../components/Hotel';
 
   
   
@@ -36,8 +37,16 @@ import Dashboard from '../components/Dashboard';
                 // path: '/template/dashboard',
                 index: true,
                 element: <Dashboard />,
-              }
+              },
+
+
+              {
+                path: '/template/hotel',
+                element: <Hotel />,
+              },
             ]
+
+
           },
           
         ]);
