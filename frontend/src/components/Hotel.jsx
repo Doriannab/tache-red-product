@@ -4,7 +4,7 @@ import HotelContenu from './HotelContenu';
 
 function Hotel() {
     const [isModalOpen, setIsModalOpen] = useState(false);
-
+// eslint-disable-next-line
     const openModal = () => {
            
 setIsModalOpen(true);

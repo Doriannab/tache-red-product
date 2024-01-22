@@ -7,9 +7,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 function Navbar ()  {
   const location = useLocation()
   const path = location.pathname;
+  // eslint-disable-next-line
   const navigate = useNavigate()
 
   const getTitle = () =>{
+    // eslint-disable-next-line
     switch(path) {
       case'/template' :
       return 'Dashboard';
@@ -19,6 +21,7 @@ function Navbar ()  {
   }
 
   const getinfo = () =>{
+    // eslint-disable-next-line
     switch(path) {
       case'/template' :
       return 'Bienvenue Sur RED Product';
@@ -121,7 +124,7 @@ function Navbar ()  {
   </div>
   
 </nav>
-<div className="mt-1 mt-20 ms-8 lg:h-20">
+<div className="mt-1 mt-20 ms-8 lg:h-20cd">
             <h2 className="mt-4 text-xl text-black lg:text-4xl ">{getinfo()}</h2>
                 <p className="text-sm text-black">Lorem ipsum dolor sit amet consectetur</p>
                </div>
